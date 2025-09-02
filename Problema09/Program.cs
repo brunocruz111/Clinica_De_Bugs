@@ -51,9 +51,9 @@ Console.Write(transposta[i,j] + " ");
 //Codigo não finalizado
 Console.WriteLine()
 }
-*//
+*/
 
-int[][] matriz = new int[3, 3];
+int[][] matriz = new int[3] [3];
 
 int somaTotal = 0;
 int somaDiagonal = 0;
@@ -81,20 +81,21 @@ for (int i = 0; i < 3; i++)
 {
     Console.WriteLine(maiores[j]);
 }
-int[] transposta = new int[3][3];
+int[,] transposta = new int[3][3];
 for (int i = 0; i < 3; i++)
 {
-for (int j = 0; j < 3; j++)
-{
-transposta[i, j] = matriz[i, j];
-}
+    for (int j = 0; j < 3; j++)
+    {
+        transposta[i, j] = matriz[i, j];
+    }
 }
 Console.WriteLine("Matriz transposta:");
 for (int i = 0; i < 3; i++)
 {
-for (int j = 0; j < 3; j++)
-{
+    for (int j = 0; j < 3; j++)
+    {
 
-Console.Write(transposta[i,j] + " ");
+        Console.Write(transposta[i, j] + " ");
+    }
 }
 
