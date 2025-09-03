@@ -10,6 +10,6 @@ do
 }
 //Condição errada comparador de string não pode ser escrito da maneira como estava escrita, podesse utilizar o comando equals que compara strings
 while (!string.Equals(resposta,"S"));
-//Comando escrito de forma incorreta
+//Comando escrito de forma incorreta 
     Console.WriteLine("Programa encerrado.");
     
