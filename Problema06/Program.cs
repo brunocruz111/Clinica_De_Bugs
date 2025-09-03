@@ -7,3 +7,4 @@ double valor = double.Parse(Console.ReadLine().Replace('.', ','));
 total =+ valor;
 }
 Console.WriteLine("Meta atingida! Total economizado: R$ {total}");
+ 
