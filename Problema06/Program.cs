@@ -1,10 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
-double total = "0";
+
+using System.Globalization;
+
+double total = 0;
 while (total < 50)
 {
-Console.Write("Digite o valor a ser guardado: ");
-double valor = double.Parse(Console.ReadLine().Replace('.', ','));
-total =+ valor;
+    Console.WriteLine("Digite o valor a ser guardado: ");
+    //removido a troca de "," e ".".
+    double valor = double.Parse(Console.ReadLine()!,  CultureInfo.InvariantCulture);
+    //Inverter operador =+ por +=
+    total += valor;
 }
-Console.WriteLine("Meta atingida! Total economizado: R$ {total}");
+
+//Falta o $ na interpolacao das strings
+Console.WriteLine($"Valor atingido! total economizado: R$ {total.ToString("0.00",CultureInfo.InvariantCulture)}");
+
  
