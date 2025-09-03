@@ -1,9 +1,16 @@
-﻿// See https://aka.ms/new-console-template for more information
-string resposta;
+﻿﻿// See https://aka.ms/new-console-template for more information
+string? resposta;
+
 do
 {
-Console.Write("Deseja sair? (S/N): ");
-resposta = Console.ReadLine().ToUpper()[0];
+    //Comando Write incompleto
+    Console.WriteLine("Deseja sair? (S/N): ");
+    //Comando toupper escrito de maneira incorreta
+    resposta = (Console.ReadLine() ?? string.Empty).Trim().ToUpper();
 }
-while (resposta != "S" || resposta != "N");
-Console.writeline("Programa encerrado.");
+//Condição errada comparador de string não pode ser escrito da maneira como estava escrita, podesse utilizar o comando equals que compara strings
+while (!string.Equals(resposta,"S"));
+//Comando escrito de forma incorreta 
+    Console.WriteLine("Programa encerrado.");
+    
+ 
