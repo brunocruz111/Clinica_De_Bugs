@@ -9,7 +9,7 @@ do
     resposta = Console.ReadLine().ToUpper();
     Console.WriteLine(resposta);
 }
-//Condição comparador de string não pode ser escrito da maneira escrito, é necessário utilizar o comando equals que compara strings
+//Condição errada comparador de string não pode ser escrito da maneira como estava escrita, é necessário utilizar o comando equals que compara strings
 while (!string.Equals(resposta,"S"));
 //Comando escrito de forma incorreta
     Console.WriteLine("Programa encerrado.");
