@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿﻿// See https://aka.ms/new-console-template for more information
 string? resposta;
 
 do
@@ -6,10 +6,9 @@ do
     //Comando Write incompleto
     Console.WriteLine("Deseja sair? (S/N): ");
     //Comando toupper escrito de maneira incorreta
-    resposta = Console.ReadLine().ToUpper();
-    Console.WriteLine(resposta);
+    resposta = (Console.ReadLine() ?? string.Empty).Trim().ToUpper();
 }
-//Condição comparador de string não pode ser escrito da maneira escrito, é necessário utilizar o comando equals que compara strings
+//Condição errada comparador de string não pode ser escrito da maneira como estava escrita, podesse utilizar o comando equals que compara strings
 while (!string.Equals(resposta,"S"));
 //Comando escrito de forma incorreta
     Console.WriteLine("Programa encerrado.");

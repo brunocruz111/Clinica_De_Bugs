@@ -1,6 +1,8 @@
 ﻿Console.Write("Digite um número para ver a tabuada: ");
 int num = int.Parse(Console.ReadLine());
-for (int i = 1; i <= 10; i--)
+//substitui o i-- por i++
+for (int i = 1; i <= 10; i++)
 {
-Console.WriteLine($"{num} x {i} = {num * j}");
+    //substitui o j por i
+    Console.WriteLine($"{num} x {i} = {num * i}");
 }
