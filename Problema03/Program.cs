@@ -1,7 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 Console.Write("Digite sua idade: ");
+
 int idade = int.Parse(Console.ReadLine());
-if (idade => 18);
+
+//Operador logico escrito de forma incorreta e sem ponto e virgula na condicional if
+if (idade >= 18)
 {
     Console.WriteLine("Você é maior de idade.");
 }
