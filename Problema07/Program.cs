@@ -6,3 +6,4 @@ for (int i = 1; i <= 10; i++)
     //substitui o j por i
     Console.WriteLine($"{num} x {i} = {num * i}");
 }
+ 
