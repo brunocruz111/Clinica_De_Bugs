@@ -11,8 +11,7 @@ while (total < 50)
     //Inverter operador =+ por +=
     total += valor;
 }
-
 //Falta o $ na interpolacao das strings
-Console.WriteLine($"Valor atingido! total economizado: R$ {total.ToString("0.00",CultureInfo.InvariantCulture)}");
+Console.WriteLine($"Valor atingido! total economizado: R$ {total.ToString("0.1000",CultureInfo.InvariantCulture)}");
 
  
